@@ -1,0 +1,95 @@
+.full_div{
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    z-index: -1000;
+    background: #f9f9f9;
+}
+.login_design_img{
+    width: 60vw;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+/* .login_mob_top_wave img{
+    height: 10rem;
+} */
+
+.login_girl_user{
+    height: 8rem;
+}
+.login_mob_btm_wave{
+    z-index: -1;
+}
+
+.psr_tf{
+    height: 1.5rem;
+    border-radius: 50px;
+    border: 2px solid var(--psr-gray-500);
+    padding: 0.5rem 1.25rem 0.5rem 1.25rem;
+    font-size: 1.5rem; 
+    background-color: transparent;
+    outline: none;
+    width: 75%;
+    max-width: 20rem;
+    color: var(--psr-gray-600);
+}
+.psr_form_box{
+    width: 75vw;
+    max-width: 20rem;
+}
+.psr_tf_icon{
+    padding: 0.5rem 1.25rem 0.5rem 2.5rem;
+}
+.psr_tf:hover{
+    border-radius: 50px;
+    border: 2px solid var(--psr-main-200);
+}
+.psr_tf:focus{
+    border-radius: 50px;
+    border: 2px solid var(--psr-main-400);
+}
+.psr_tf_icon_l{
+    position: absolute;
+    padding: 10px;
+}
+.login_dsk_bg{
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .login_mob_top_wave{
+        display: none;
+    }
+    .login_mob_btm_wave{
+        display: none;
+    }
+    .login_design_img{
+        position: relative;
+        width: 30vw;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+    }
+    .login_dsk_bg{
+        display: block;
+    }
+    .login_dsk_bg img{
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        z-index: -100;
+    }
+    .login_mid_design{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: 80vw;
+    }
+}
